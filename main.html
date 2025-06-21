@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>updated login & sign up page</title>
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+   
+  
+    
+  <div class="main-container">
+
+    <!-- Left side -->
+     
+    <div class="welcome-section" >
+      <h1> Welcome Back !</h1>
+      <p>We're glad to have you here. Please log in or create a new account to get started.</p>
+    </div>
+
+    <!-- Right side -->
+    <div class="form-section" >
+      <!-- Login Form -->
+      <div class="form-box login active">
+        <h2>Login</h2>
+        <form action="#">
+         
+          <div class="input-field">
+            <input type="text" placeholder=" Enter Email" id="email" >
+            <span class="user"><img src="9.png"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" id="password" placeholder=" Enter Password"  onclick="passwordInput">
+              <span class="togglePassword" onclick="toggleButton()">&#x1F440;</span>
+              <span class="user"><img src="5.png"></span>
+
+          </div>
+          <a href="#" class="forgot-pass">Forgot Password?</a>
+          
+          <button type="submit" onclick="validation()">Login</button>
+          <div class="icons">
+          <span  class="icon-item"><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AdBytiOS6FDHIlwvWI4jRHDOB37-WD_it34sJGJAC6XBWobQ5t0kOqUwLLxZXY07YS5sxuRrs7WqDg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1774510307%3A1749792500340034"><img src="1.png" class="image1" ></a></span>
+          <span   class="icon-item"><a href="https://x.com/i/flow/login"><img src="2.png" class="image2"></a></span>
+          <span   class="icon-item"><a href="https://www.facebook.com/"><img src="3.png" class="image3"></a></span>
+        </div>
+        </form>
+        <div class="switch-link">
+          Don't have an account? <a href="#" id="show-signup">Sign up</a>
+        </div>
+         </div>
+        
+      
+     
+
+      <!-- Signup Form -->
+      <div class="form-box signup">
+        <h2  class="signin"><img src="8.jpg"></h2>
+        <form action="#">
+          <div class="input-field">
+            <input type="name" id="name" placeholder="Full Name" >
+            <span class="user"><img src="4.png"></span>
+
+          </div>
+          <div class="input-field">
+            <input type="email" id="email1" placeholder="Email">
+            <span class="user"><img src="9.png"></span>
+          </div>
+         <div class="input-field">
+            <input type="password" id="password2" placeholder=" Enter Password"  >
+              <span class="togglePassword2" onclick="toggleButton2()">&#x1F440;</span>
+              <span class="user"><img src="5.png"></span>
+
+          </div>
+          <div class="input-field">
+            <input type="password" id="password3" placeholder=" Confirm Password" >
+              <span class="togglePassword3" onclick="toggleButton3()">&#x1F440;</span>
+              <span class="user"><img src="5.png"></span>
+
+          </div>
+          <div class="input-field2">
+            <input type="checkbox" value="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox"   class="policy" > I have read and agree to <b>Terms </b> and <b>Conditions</b></label>
+              
+
+          </div>
+          <button type="submit" onclick="validation1()" >Create Account</button>
+        </form>
+        <div class="switch-link">
+          Already have an account? <a href="#" id="show-login">Login</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ 
+<script src="script.js"></script>
+</body>
+</html>
